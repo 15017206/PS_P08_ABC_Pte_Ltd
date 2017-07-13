@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
                 final Marker cp2 = map.addMarker(new
                         MarkerOptions()
                         .position(hqCentral)
-                        .title("Causeway Point")
+                        .title("Central:")
                         .snippet("Block 3A, Orchard Ave 3, 134542 \n" +
                                 "Operating hours: 11am-8pm\n" +
                                 "Tel:67788652\n")
@@ -112,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
                 final Marker cp3 = map.addMarker(new
                         MarkerOptions()
                         .position(hqEast)
-                        .title("Causeway Point")
+                        .title("East:")
                         .snippet("Block 555, Tampines Ave 3, 287788 \n" +
                                 "Operating hours: 9am-5pm\n" +
                                 "Tel:66776677\"\n")
@@ -131,11 +131,11 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public boolean onMarkerClick(Marker marker) {
                         if (marker.equals(cp)) {
-                            Toast.makeText(getApplicationContext(), "Title: " + cp.getTitle(), Toast.LENGTH_LONG).show();
+                            Toast.makeText(getApplicationContext(), "Title: " + cp.getTitle(), Toast.LENGTH_SHORT).show();
                         } else if (marker.equals(cp2)) {
-                            Toast.makeText(getApplicationContext(), "Title: " + cp.getTitle(), Toast.LENGTH_LONG).show();
+                            Toast.makeText(getApplicationContext(), "Title: " + cp2.getTitle(), Toast.LENGTH_SHORT).show();
                         } else if (marker.equals(cp3)) {
-                            Toast.makeText(getApplicationContext(), "Title: " + cp.getTitle(), Toast.LENGTH_LONG).show();
+                            Toast.makeText(getApplicationContext(), "Title: " + cp3.getTitle(), Toast.LENGTH_SHORT).show();
                         }
 
                         return false;
