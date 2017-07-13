@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PS_ABC_Pte_Ltd</string>
+    <string-array name="Branches">
+        <item>North</item>
+        <item>East</item>
+        <item>Central</item>
+    </string-array>
+</resources>
